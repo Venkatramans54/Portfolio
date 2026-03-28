@@ -50,7 +50,7 @@ import {
 } from "react-icons/si";
 
 export const resumeLink =
-  "https://drive.google.com/file/d/10OFgSU-UBME9vrSwPcaDaT2uSu2qQ_cM/view?usp=drive_link";
+  "https://drive.google.com/file/d/1sQ79Sw7OytIpfw3xRMpLF6n3UrqcpcKs/view?usp=drive_link";
 export const callToAction = "https://www.linkedin.com/in/venkatraman-sundararajan-971870148/";
 
 const plainSegment = (text) => ({ text });
