@@ -1,6 +1,6 @@
-# VenkatPortfolio
+# Personlal Portfolio
 
-Static React portfolio for Venkatraman Sundararajan
+Personal Portfolio for Venkatraman Sundararajan
 
 ## Stack
 
@@ -8,12 +8,6 @@ Static React portfolio for Venkatraman Sundararajan
 - Vite
 - Tailwind CSS
 - Framer Motion
-
-## Notes
-
-- This version is fully static.
-- There are no API tokens, Netlify functions, or contribution-fetching flows.
-- The Resume CTA opens the Google Drive folder in a new tab instead of serving a bundled local PDF.
 
 ## Run locally
 
