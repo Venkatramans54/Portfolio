@@ -23,6 +23,7 @@ const FeatureCard = ({
   duration,
   content1,
   content2,
+  content3,
   index,
 }) => (
   <motion.div
@@ -48,14 +49,36 @@ const FeatureCard = ({
       <p className="mb-2 font-poppins text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">
         {duration}
       </p>
-      <p className="mb-1 font-poppins text-[15px] font-normal leading-[25px] text-slate-300">
-        {content1}
-      </p>
-      {content2 && (
-        <p className="mb-1 font-poppins text-[15px] font-normal leading-[25px] text-slate-300">     
-      ● {content2}
-        </p>
-      )}
+      <div className="mt-1 flex flex-col gap-3">
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:gap-4">
+          <p className="shrink-0 whitespace-nowrap font-poppins text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400 sm:w-[128px]">
+            CGPA
+          </p>
+          <p className="flex-1 font-poppins text-[15px] font-normal leading-[25px] text-slate-300">
+            {content1.replace("CGPA: ", "")}
+          </p>
+        </div>
+        {content2 && (
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:gap-4">
+            <p className="shrink-0 whitespace-nowrap font-poppins text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400 sm:w-[128px]">
+              Foundation
+            </p>
+            <p className="flex-1 font-poppins text-[15px] font-normal leading-[25px] text-slate-300">
+              {content2}
+            </p>
+          </div>
+        )}
+        {content3 && (
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:gap-4">
+            <p className="shrink-0 whitespace-nowrap font-poppins text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400 sm:w-[128px]">
+              Coursework
+            </p>
+            <p className="flex-1 font-poppins text-[15px] font-normal leading-[25px] text-slate-300">
+              {content3.replace("Relevant coursework: ", "")}
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   </motion.div>
 );

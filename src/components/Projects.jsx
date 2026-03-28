@@ -101,8 +101,9 @@ const Projects = () => {
       if (!containerRef.current) return;
 
       const { scrollLeft, clientWidth, scrollWidth } = containerRef.current;
-      setCanScrollPrev(scrollLeft > 8);
-      setCanScrollNext(scrollLeft + clientWidth < scrollWidth - 8);
+      const scrollTolerance = 8;
+      setCanScrollPrev(scrollLeft > scrollTolerance);
+      setCanScrollNext(scrollLeft + clientWidth < scrollWidth - scrollTolerance);
 
       const viewportCenter = scrollLeft + clientWidth / 2;
       let closestIndex = 0;
@@ -120,6 +121,7 @@ const Projects = () => {
       });
 
       setActiveIndex(closestIndex);
+      setCanScrollPrev(scrollLeft > scrollTolerance && closestIndex > 0);
     };
 
     updateCardWidth();

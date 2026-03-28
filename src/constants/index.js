@@ -68,11 +68,13 @@ export const educationList = [
   {
     id: "education-1",
     icon: krishna_logo,
-    title: "Sri Krishna Arts & Science College, Coimbatore",
+    title: "Sri Krishna Institutions, Coimbatore",
     degree: "Masters in Software Systems",
     duration: "2013 - 2018",
     content1: "CGPA: 8.9 / 10",
     content2: "Strong foundation in software systems and engineering fundamentals.",
+    content3:
+      "Relevant coursework: Data Structures and Algorithms, Software Engineering, Database Systems, Operating Systems.",
   },
 ];
 
@@ -179,7 +181,7 @@ export const experiences = [
   {
     organisation: "HackerRank, Bangalore",
     logo: hackerrank_logo,
-    link: "",
+    link: "https://www.hackerrank.com/",
     positions: [
       {
         title: "Senior Software Development Engineer in Test",
@@ -298,7 +300,7 @@ export const experiences = [
   {
     organisation: "Optisol Business Solutions, Chennai",
     logo: optisol_logo,
-    link: "",
+    link: "https://www.optisolbusiness.com/",
     positions: [
       {
         title: "Automation Analyst",
@@ -348,7 +350,7 @@ export const experiences = [
   {
     organisation: "Infosys Private Limited, Chennai",
     logo: infosys_logo,
-    link: "",
+    link: "https://www.infosys.com/",
     positions: [
       {
         title: "Test Engineer",

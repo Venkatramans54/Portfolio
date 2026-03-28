@@ -82,16 +82,34 @@ const ExperienceCard = (props) => {
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="flex flex-row items-center mb-6">
-        <img
-          src={props.logo}
-          alt={props.organisation}
-          className="w-[52px] h-[52px] rounded-full z-[2]"
-        />
-        <h4 className="ml-2 font-poppins font-semibold text-[21px] text-gradient leading-[28px] tracking-[-0.01em]">
-          {props.organisation}
-        </h4>
-      </div>
+      {props.link ? (
+        <a
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mb-6 inline-flex items-center gap-2 rounded-2xl border border-white/6 bg-white/[0.02] px-3 py-2 transition-all duration-300 hover:border-teal-300/30 hover:bg-white/[0.04]"
+        >
+          <img
+            src={props.logo}
+            alt={props.organisation}
+            className="z-[2] h-[52px] w-[52px] rounded-full"
+          />
+          <h4 className="font-poppins text-[21px] font-semibold leading-[28px] tracking-[-0.01em] text-gradient">
+            {props.organisation}
+          </h4>
+        </a>
+      ) : (
+        <div className="flex flex-row items-center mb-6">
+          <img
+            src={props.logo}
+            alt={props.organisation}
+            className="w-[52px] h-[52px] rounded-full z-[2]"
+          />
+          <h4 className="ml-2 font-poppins font-semibold text-[21px] text-gradient leading-[28px] tracking-[-0.01em]">
+            {props.organisation}
+          </h4>
+        </div>
+      )}
       <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-6">
         {props.positions.map((position, index) => (
           <li
@@ -101,7 +119,7 @@ const ExperienceCard = (props) => {
             } ml-4`}
           >
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <h3 className="font-poppins text-[18px] font-semibold leading-[26px] text-gray-900 dark:text-white">
+            <h3 className="font-poppins text-[18px] font-bold italic leading-[26px] text-gray-900 dark:text-white">
               {position.title}
             </h3>
             <time className="mb-2 mt-1 block font-poppins text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400 dark:text-gray-500">
