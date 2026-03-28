@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="pai" x1="18" y1="18" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A5F5FF"/>
+      <stop offset="1" stop-color="#33BBCF"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="80" height="80" rx="26" fill="#0B1220" stroke="url(#pai)" stroke-width="3"/>
+  <rect x="27" y="29" width="42" height="28" rx="11" stroke="url(#pai)" stroke-width="3"/>
+  <circle cx="39" cy="43" r="3" fill="url(#pai)"/>
+  <circle cx="57" cy="43" r="3" fill="url(#pai)"/>
+  <path d="M42 57H54" stroke="url(#pai)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 20V29" stroke="url(#pai)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="48" cy="16" r="3" fill="url(#pai)"/>
+  <path d="M23 70H73" stroke="url(#pai)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="28" cy="70" r="4" fill="#0B1220" stroke="url(#pai)" stroke-width="2.5"/>
+  <circle cx="48" cy="70" r="4" fill="#0B1220" stroke="url(#pai)" stroke-width="2.5"/>
+  <circle cx="68" cy="70" r="4" fill="#0B1220" stroke="url(#pai)" stroke-width="2.5"/>
+</svg>
